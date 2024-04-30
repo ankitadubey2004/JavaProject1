@@ -25,13 +25,13 @@ public void set_details(){
     emp_id = String.valueof(uuid);
     System.out.println("=================== **** ENTER EMPLOYEE DETAILS *** ===================");
     System.out.println();
-    System.out.println("EMPLOYEE NAME: ");
+    System.out.print("EMPLOYEE NAME: ");
     emp_name = sc.nextInt();
-    System.out.println("EMPLOYEE AGE: ");
+    System.out.print("EMPLOYEE AGE: ");
     emp_age = sc.nextInt();
     sc.nextLine();
-    System.out.println("EMPLOYEE DEPARTMENT: ");
-    emp_age = sc.nextInt();
-    System.out.println("SHOWROOM NAME: ");
-    emp_age = sc.nextInt();
+    System.out.print("EMPLOYEE DEPARTMENT: ");
+    emp_department = sc.nextInt();
+    System.out.print("SHOWROOM NAME: ");
+    showroom_name = sc.nextInt();
 }
