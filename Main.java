@@ -25,10 +25,11 @@ interface utility {
     public static void main (String[] args){ 
         Scanner sc = new Scanner(System.in);
         Showroom showroom[] = new Showroom[5];
-        Employee employee[] = new Employee[5];
+        Employees employee[] = new Employee[5];
         Cars car[] = new Cars[5];
         int car_counter = 0;
         int employees_counter = 0;
+        int showroom_counter = 0;
         int choice = 100;
         while(choice!=0){
             main_menu();
@@ -40,7 +41,15 @@ interface utility {
                     showroom[showroom_counter] =new Showroom();
                     showroom[showroom_counter].set_details();
                     showroom_counter++;
-                    
+                    System.out.println();
+                    System.out.println("1].ADD NEW SHOWROOM");
+                    System.out.println("9].GO BACK TO MAIN MENU");   
+                    choice = sc.nextInt();
+                    break;
+                case 2: 
+                    employee[employees_counter] = new Employees();
+                    employee[employees_counter].set_details();
+
                 }
             }
         }
